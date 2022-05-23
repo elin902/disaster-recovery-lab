@@ -27,8 +27,6 @@ Step 1: Copying files to VMs.
 -----------------------------
 "
 #copy files to VMs
-vagrant scp vm_config.sh server-01-backup:/tmp
-vagrant scp vm_config.sh server-01:/tmp
 vagrant scp backup-script.sh server-01:/tmp
 vagrant scp vm_backup.service server-01:/tmp
 vagrant scp vm_backup.timer server-01:/tmp
