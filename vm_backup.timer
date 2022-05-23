@@ -1,0 +1,12 @@
+[Unit]
+Description=Server backup script
+Requires=vm_backup.service
+
+[Timer]
+Persistent=true
+OnBootSec=120
+OnUnitActiveSec=300
+Unit=vm_backup.service
+
+[Install]
+WantedBy=timers.target

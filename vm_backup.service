@@ -1,0 +1,10 @@
+[Unit]
+Description=Server backup script
+Wants=vm_backup.timer
+
+[Service]
+User=vagrant
+ExecStart=/usr/bin/backup-script.sh
+
+[Install]
+WantedBy=multi-user.target
