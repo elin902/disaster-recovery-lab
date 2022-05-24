@@ -5,6 +5,14 @@ It consists of 2 virtual machines created in a private network.
 One of the machines runs a backup service that archives the most important folders 
 and copies them securely to a remote server that acts as a backup storage device.
 
+## Prerequisites
+
+In order to succesfully create the lab you need to have a host with sudo privileges and the following packages installed:
+
+- Vagrant 2.2.19+
+- Vagrant-scp (run $vagrant plugin install vagrant-scp)
+- Virtualbox 6.1
+
 ## Installation
 To run the lab, clone the project and execute the "runlab.sh" script. It's being processed in following steps:
 
